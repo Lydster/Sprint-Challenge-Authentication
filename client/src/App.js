@@ -38,7 +38,15 @@ class App extends Component {
   }
 }
 function Home(props) {
-  return <h1>Dad Jokes</h1>;
+  return (
+    <div>
+      <h1>Dad Jokes</h1>
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/81wsBZ5kgOL._UY445_.jpg"
+        alt="Very Cool Dad"
+      />
+    </div>
+  );
 }
 
 export default App;

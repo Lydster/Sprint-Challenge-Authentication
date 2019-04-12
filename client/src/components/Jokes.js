@@ -11,11 +11,15 @@ class Jokes extends React.Component {
     return (
       <>
         <h3>list of jokes</h3>
-        <ul>
+        <div className="joke-list">
           {this.state.jokes.map(joke => {
-            return <li key={joke.id}>{joke.joke}</li>;
+            return (
+              <div className="single-joke" key={joke.id}>
+                {joke.joke}
+              </div>
+            );
           })}
-        </ul>
+        </div>
       </>
     );
   }

@@ -22,3 +22,7 @@
 .link:hover {
   color: purple;
 }
+
+.single-joke {
+  margin: 30px 10px;
+}
