@@ -26,6 +26,10 @@ class App extends Component {
           <NavLink className="link" to="/jokes">
             Jokes
           </NavLink>
+          &nbsp; | &nbsp;
+          <NavLink onClick={this.logout} className="link" to="/">
+            Logout
+          </NavLink>
         </header>
 
         <Route exact path="/" component={Home} />
@@ -36,6 +40,9 @@ class App extends Component {
       </div>
     );
   }
+  logout = () => {
+    localStorage.removeItem("token");
+  };
 }
 function Home(props) {
   return (
