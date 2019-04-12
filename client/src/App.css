@@ -9,12 +9,16 @@
   padding: 10px;
 }
 
-.Login-card {
+.input-card {
   width: 70%;
   margin: 15px auto;
 }
 
-.login-flex {
-  display: flex;
-  flex-direction: column;
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: purple;
 }

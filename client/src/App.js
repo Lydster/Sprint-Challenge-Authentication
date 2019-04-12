@@ -4,22 +4,34 @@ import "./App.css";
 
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import Jokes from "./components/Jokes";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header>
-          <NavLink to="/">Home</NavLink>
+          <NavLink className="link" to="/">
+            Home
+          </NavLink>
           &nbsp; | &nbsp;
-          <NavLink to="/register">SignUp</NavLink>
+          <NavLink className="link" to="/register">
+            SignUp
+          </NavLink>
           &nbsp; | &nbsp;
-          <NavLink to="/login">Login</NavLink>
+          <NavLink className="link" to="/login">
+            Login
+          </NavLink>
+          &nbsp; | &nbsp;
+          <NavLink className="link" to="/jokes">
+            Jokes
+          </NavLink>
         </header>
 
         <Route exact path="/" component={Home} />
         <Route path="/register" component={SignUp} />
         <Route path="/login" component={Login} />
+        <Route path="/jokes" component={Jokes} />
         <h4>Be the Coolest dad at the party!</h4>
       </div>
     );
