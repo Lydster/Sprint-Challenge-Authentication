@@ -15,16 +15,16 @@ class App extends Component {
             Home
           </NavLink>
           &nbsp; | &nbsp;
+          <NavLink className="link" to="/jokes">
+            Jokes
+          </NavLink>
+          &nbsp; | &nbsp;
           <NavLink className="link" to="/register">
             SignUp
           </NavLink>
           &nbsp; | &nbsp;
           <NavLink className="link" to="/login">
             Login
-          </NavLink>
-          &nbsp; | &nbsp;
-          <NavLink className="link" to="/jokes">
-            Jokes
           </NavLink>
           &nbsp; | &nbsp;
           <NavLink onClick={this.logout} className="link" to="/">
