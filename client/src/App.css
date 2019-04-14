@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  background-color: lightgray;
+  margin: 30px;
+  padding: 10px;
+}
+
+.input-card {
+  width: 70%;
+  margin: 15px auto;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: purple;
+}
+
+.single-joke {
+  margin: 30px 10px;
+}
